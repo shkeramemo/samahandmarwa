@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Samah and Marwa Wedding//Invitation//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:samah-marwa-wedding-20260722@samahwedding.local
+DTSTAMP:20260616T080000Z
+DTSTART:20260722T170000Z
+DTEND:20260722T220000Z
+SUMMARY:Samah and Marwa Wedding
+LOCATION:SPINE Beirut, Naccache, Lebanon
+DESCRIPTION:Cocktail Reception at 8:00 PM. After Party from 12:00 AM onwards.
+URL:https://maps.app.goo.gl/v5HbmH1qRcLQWxHR7?g_st=ic
+END:VEVENT
+END:VCALENDAR
