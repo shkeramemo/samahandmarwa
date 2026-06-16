@@ -159,7 +159,7 @@
       object-position: center;
       opacity: 0;
       transform: scale(1.012);
-      transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1), transform 1800ms ease;
+      transition: opacity 650ms cubic-bezier(0.4, 0, 0.2, 1), transform 1800ms ease;
       will-change: opacity;
     }
 
@@ -1112,7 +1112,7 @@
         const slides = Array.from(document.querySelectorAll('.cover-slide'));
         if (!slides.length) return;
         let currentIndex = 0;
-        const intervalMs = 800;
+        const intervalMs = 650;
 
         function showSlide(index) {
           slides.forEach(function (slide, slideIndex) {
