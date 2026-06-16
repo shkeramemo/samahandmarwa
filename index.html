@@ -63,23 +63,25 @@
       overflow-x: hidden;
       font-family: var(--sans);
       color: var(--brown);
-      background-color: #050403;
-      background-image: url("assets/bk.png");
-      background-attachment: fixed;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+      background: #050403;
     }
 
     body::before {
-      content: none;
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background: url("assets/bk.png") center / cover no-repeat;
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
     }
 
     body::after {
       content: "";
       position: fixed;
       inset: 0;
-      z-index: 0;
+      z-index: 1;
       pointer-events: none;
       background:
         linear-gradient(180deg, rgba(5, 4, 3, 0.08), rgba(5, 4, 3, 0.44)),
@@ -88,7 +90,7 @@
 
     body > * {
       position: relative;
-      z-index: 1;
+      z-index: 2;
     }
 
     html.is-locked,
