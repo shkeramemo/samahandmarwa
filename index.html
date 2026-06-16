@@ -64,9 +64,7 @@
       position: fixed;
       inset: 0;
       z-index: -2;
-      background:
-        linear-gradient(180deg, rgba(5, 4, 3, 0.18), rgba(5, 4, 3, 0.72)),
-        url("assets/bk.png") center / cover no-repeat;
+      background: url("assets/bk.png") center / cover no-repeat;
       transform: translateZ(0);
     }
 
@@ -77,8 +75,8 @@
       z-index: -1;
       pointer-events: none;
       background:
-        radial-gradient(circle at 50% 12%, rgba(232, 201, 189, 0.12), transparent 24rem),
-        linear-gradient(90deg, rgba(5, 4, 3, 0.72), transparent 34%, transparent 66%, rgba(5, 4, 3, 0.72));
+        linear-gradient(180deg, rgba(5, 4, 3, 0.08), rgba(5, 4, 3, 0.44)),
+        linear-gradient(90deg, rgba(5, 4, 3, 0.34), transparent 34%, transparent 66%, rgba(5, 4, 3, 0.34));
     }
 
     html.is-locked,
@@ -277,7 +275,7 @@
       display: grid;
       place-items: center;
       padding: max(16px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) max(16px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
-      background: #050403;
+      background: transparent;
     }
 
     .invitation-card img {
@@ -1217,11 +1215,11 @@
         musicStarted = true;
         music.volume = 0.72;
         try {
-          music.currentTime = 63;
+          music.currentTime = 0;
         } catch (error) {
           music.addEventListener('loadedmetadata', function () {
             try {
-              music.currentTime = 63;
+              music.currentTime = 0;
             } catch (seekError) {
               return;
             }
