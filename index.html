@@ -19,17 +19,24 @@
   <style>
     :root {
       color-scheme: dark;
-      --ink: #160f0b;
-      --smoke: #23211f;
-      --ivory: #fff9ef;
-      --soft-ivory: #f3eadb;
-      --champagne: #d8ad63;
-      --copper: #ad6e35;
-      --rose: #e8c9bd;
-      --sage: #879074;
-      --glass: rgba(255, 249, 239, 0.48);
-      --glass-strong: rgba(255, 249, 239, 0.9);
-      --line: rgba(216, 173, 99, 0.36);
+      --ivory: #FAF6EF;
+      --cream: #F0E8D8;
+      --gold: #BF8F3A;
+      --gold-lt: #D4A85A;
+      --gold-dk: #A05D2C;
+      --brown: #451A03;
+      --text: #2E2418;
+      --white: #FEFCF8;
+      --ink: var(--brown);
+      --smoke: var(--text);
+      --soft-ivory: var(--cream);
+      --champagne: var(--gold-lt);
+      --copper: var(--gold-dk);
+      --rose: var(--gold);
+      --sage: var(--text);
+      --glass: rgba(255, 252, 240, 0.36);
+      --glass-strong: rgba(255, 252, 240, 0.72);
+      --line: rgba(160, 93, 44, 0.36);
       --shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
       --radius: 8px;
       --serif: "Playfair Display", Georgia, serif;
@@ -55,7 +62,7 @@
       min-height: 100vh;
       overflow-x: hidden;
       font-family: var(--sans);
-      color: var(--ivory);
+      color: var(--brown);
       background-color: #050403;
       background-image: url("assets/bk.png");
       background-attachment: fixed;
@@ -180,7 +187,7 @@
       font-size: clamp(3.2rem, 12vw, 5.4rem);
       font-style: italic;
       line-height: 1;
-      color: #ffd28a;
+      color: #febf6d;
       text-shadow: 0 0 16px rgba(255, 190, 100, 0.42), 0 10px 30px rgba(0, 0, 0, 0.72);
       white-space: nowrap;
       pointer-events: none;
@@ -207,7 +214,7 @@
       line-height: 1.4;
       letter-spacing: 0.26em;
       text-transform: uppercase;
-      color: rgba(255, 249, 239, 0.82);
+      color: var(--ink);
       text-shadow: 0 4px 18px rgba(0, 0, 0, 0.7);
     }
 
@@ -365,7 +372,7 @@
       font-size: 1rem;
       font-weight: 400;
       line-height: 1.85;
-      color: rgba(22, 15, 11, 0.88);
+      color: var(--ink);
     }
 
     .intro-copy p + p,
@@ -442,7 +449,7 @@
       font-weight: 900;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: rgba(22, 15, 11, 0.74);
+      color: var(--ink);
     }
 
     .details-grid {
@@ -519,7 +526,7 @@
       margin-top: 4px;
       font-size: 0.92rem;
       line-height: 1.6;
-      color: rgba(22, 15, 11, 0.76);
+      color: var(--ink);
     }
 
     .action-row {
@@ -639,7 +646,7 @@
       border-radius: var(--radius);
       font-size: 0.94rem;
       line-height: 1.75;
-      color: rgba(22, 15, 11, 0.82);
+      color: var(--ink);
       background: rgba(255, 249, 239, 0.44);
     }
 
@@ -651,7 +658,7 @@
 
     .with-love {
       font-size: 0.9rem;
-      color: rgba(22, 15, 11, 0.76);
+      color: var(--ink);
     }
 
     .signature {
