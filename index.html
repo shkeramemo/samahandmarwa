@@ -56,27 +56,32 @@
       overflow-x: hidden;
       font-family: var(--sans);
       color: var(--ivory);
-      background: #050403;
+      background-color: #050403;
+      background-image: url("assets/bk.png");
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 
     body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      z-index: -2;
-      background: url("assets/bk.png") center / cover no-repeat;
-      transform: translateZ(0);
+      content: none;
     }
 
     body::after {
       content: "";
       position: fixed;
       inset: 0;
-      z-index: -1;
+      z-index: 0;
       pointer-events: none;
       background:
         linear-gradient(180deg, rgba(5, 4, 3, 0.08), rgba(5, 4, 3, 0.44)),
         linear-gradient(90deg, rgba(5, 4, 3, 0.34), transparent 34%, transparent 66%, rgba(5, 4, 3, 0.34));
+    }
+
+    body > * {
+      position: relative;
+      z-index: 1;
     }
 
     html.is-locked,
